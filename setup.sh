@@ -24,9 +24,12 @@ fi;
 
 [ "$(ls -A $avatar_dir/)" ] && echo "Avatar directory is not empty. Assuming there are images already" || generate_avatars
 
+
+#FIXME: Modify this line to also include a virtualenv pointing to python 3.7 or earlier: source $python_dir/Scripts/activate
+
 echo "Installing prerequisite Python packages"
 
-python -m pip install -r "${python_dir}/prereqs.txt"
+pip3 install git+git://github.com/gunthercox/ChatterBot.git@master
 
 echo "Installing core Python packages"
 
