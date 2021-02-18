@@ -4,7 +4,7 @@ export class Profile extends React.Component {
     render(){
         return (
             <div>
-                <ProfilePhoto image="avatars/avatar335.png"/>
+                <ProfilePhoto image="avatars/avatar1.PNG"/>
                 <h1>{this.props.name}</h1>
 
                 <ProfileDetails />
@@ -15,7 +15,7 @@ export class Profile extends React.Component {
 
 class ProfilePhoto extends React.Component {
     render() {
-        return(<img src={this.props.image}/>);
+        return(<img height="150px" width="150px" src={this.props.image}/>);
     }
 }
 
