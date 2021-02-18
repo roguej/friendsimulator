@@ -1,7 +1,7 @@
 #!/bin/bash
 
-src_dir="src"
-avatar_dir="${src_dir}/avatars"
+public_dir="public"
+avatar_dir="${public_dir}/avatars"
 python_installed=`command -v python`
 python_dir="python"
 
